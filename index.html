@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio HouseZ — Barbearia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header class="topo">
+    <div class="container topo-interno">
+      <span class="logo">Studio <strong>HouseZ</strong></span>
+      <nav id="menu" class="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="menu-btn" class="menu-btn" aria-label="Abrir menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- CAPA -->
+  <section class="capa">
+    <div class="container capa-interno">
+      <p class="capa-ola">Barbearia &bull; Estilo &bull; Tradição</p>
+      <h1>Studio HouseZ</h1>
+      <p class="capa-sub">Cortes clássicos e modernos, barba terapia e muito mais.<br>Atendimento com hora marcada, sem espera.</p>
+      <div class="capa-botoes">
+        <a class="btn btn-ouro" href="#agendar">Agendar horário</a>
+        <a class="btn btn-vazio" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="secao">
+    <div class="container">
+      <h2 class="titulo">Serviços</h2>
+      <p class="subtitulo">Escolha o serviço e toque em <strong>Agendar</strong> para garantir seu horário.</p>
+      <div class="grade-servicos" id="lista-servicos"><!-- preenchido pelo script.js --></div>
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section id="agendar" class="secao secao-escura">
+    <div class="container">
+      <h2 class="titulo">Agende seu horário</h2>
+      <p class="subtitulo">Atendimento de <strong>terça a sábado</strong>, das <strong>10h às 12h</strong> e das <strong>13h às 20h</strong>. Horários de 40 em 40 minutos — os ocupados nem aparecem.</p>
+
+      <div class="agenda-card">
+        <div class="agenda-passo">
+          <span class="passo-num">1</span>
+          <label for="agenda-servico">Serviço</label>
+          <select id="agenda-servico"></select>
+        </div>
+
+        <div class="agenda-passo">
+          <span class="passo-num">2</span>
+          <label for="agenda-data">Dia</label>
+          <input type="date" id="agenda-data">
+          <p class="agenda-aviso" id="agenda-aviso"></p>
+        </div>
+
+        <div class="agenda-passo">
+          <span class="passo-num">3</span>
+          <label>Horários disponíveis</label>
+          <div class="grade-horarios" id="grade-horarios"></div>
+        </div>
+
+        <div class="agenda-passo">
+          <span class="passo-num">4</span>
+          <label for="agenda-nome">Seu nome</label>
+          <input type="text" id="agenda-nome" placeholder="Ex.: João Silva">
+        </div>
+
+        <button class="btn btn-ouro btn-grande" id="btn-confirmar">Confirmar pelo WhatsApp</button>
+        <p class="agenda-nota">Você será levado ao WhatsApp do Studio HouseZ com o agendamento pronto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="secao">
+    <div class="container sobre-interno">
+      <div>
+        <h2 class="titulo">Sobre o Studio</h2>
+        <p>O Studio HouseZ é comandado pelo barbeiro <strong>David</strong>, especialista em cortes clássicos e modernos, barba terapia, luzes e relaxamento. Aqui você é atendido com hora marcada, sem espera e com aquele capricho que faz diferença.</p>
+        <ul class="lista-sobre">
+          <li>Atendimento com hora marcada</li>
+          <li>Produtos de qualidade</li>
+          <li>Ambiente climatizado</li>
+        </ul>
+      </div>
+      <div class="card-info">
+        <h3>Horários</h3>
+        <p>Terça a sábado<br>10h às 12h &bull; 13h às 20h<br><small>Fechado domingo e segunda</small></p>
+        <h3>Formas de pagamento</h3>
+        <p>Pix &bull; Cartão de crédito<br>Cartão de débito &bull; Dinheiro</p>
+        <h3>Endereço</h3>
+        <p>Rua Pérola, 371</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="secao secao-escura">
+    <div class="container contato-interno">
+      <h2 class="titulo">Fale com a gente</h2>
+      <p class="subtitulo">Agende pelo site, chame no WhatsApp ou siga o Studio no Instagram.</p>
+      <div class="contato-botoes">
+        <a class="btn btn-whats" href="https://wa.me/5511959631200?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20HouseZ." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-insta" href="https://www.instagram.com/studio_housez/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Studio HouseZ</strong> &bull; Rua Pérola, 371</p>
+      <p>Terça a sábado &bull; 10h–12h e 13h–20h</p>
+      <p><a href="https://www.instagram.com/studio_housez/" target="_blank" rel="noopener">@studio_housez</a></p>
+      <p class="rodape-copy">&copy; 2026 Studio HouseZ. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO WHATSAPP FLUTUANTE -->
+  <a class="whats-flutuante" href="https://wa.me/5511959631200?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20HouseZ." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">&#128172;</a>
+
+  <!-- CHATBOT -->
+  <button id="chat-btn" class="chat-btn" aria-label="Abrir chat">&#128172;</button>
+  <div id="chat" class="chat">
+    <div class="chat-topo">
+      <span>Assistente Studio HouseZ</span>
+      <button id="chat-fechar" aria-label="Fechar chat">&times;</button>
+    </div>
+    <div id="chat-msgs" class="chat-msgs"></div>
+    <div id="chat-opcoes" class="chat-opcoes"></div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" type="text" placeholder="Digite sua dúvida..." autocomplete="off">
+      <button type="submit">&#10148;</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
